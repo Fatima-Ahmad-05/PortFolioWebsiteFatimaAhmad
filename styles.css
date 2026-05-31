@@ -4,7 +4,7 @@ padding:0;
 font-family: Georgia, 'Times New Roman', Times, serif;
 box-sizing: border-box;
 
-}
+} /*remove the default spaces*/
 
 
 
@@ -59,50 +59,70 @@ nav ul li{
  
   display:inline-block;
   position:relative;
-  margin:0px 20px 3px 20px;
+  margin:0px 0px 3px 20px;
   font-size: 18px;
   font-weight: 900;
   list-style:none;
   z-index:20;
+  color:white;
 
 }
 nav ul{
   display:flex;
-  gap: 24px;
+  gap: 29px;
   list-style: none;
-  padding: 0;
-  margin: 0;
+ 
   align-items:left;
+   background: #060b16;
+    border-radius: 32px;
+    border-width: 716px;
+    height:46px;
+   padding:-4px;
 }
 
 .right-box{
   position: fixed;
   top: 16px;
-  left: 70px;
+  left: 2px;
   display: flex;
+ 
   align-items: right;
-  padding: 12px 400px;
-  background: rgba(7, 9, 34, 0.75);
-  border-radius: 12px;
+  padding: 4px 200px;
+
 
 }
-nav ul li a h4,
 nav ul li a{
   color: white;
+  z-index:200;
+   top: 4px;
+    
+  
+ 
+   gap:10px;
+
 }
 
 nav ul li a{
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-  font-size: 20px;
+  font-size: 21px;
   font-weight: 900;
   text-decoration: none;
+  gap:100px;
+
+
+  position:relative;
 }
 
 nav ul li a::after{
-  content: "";
+  content:' ';
   width:0;
-  height:3px;
-  transition:0.5s;
+  height:7px;
+  left:0px;
+  bottom:-10px;
+  background: #4e9fd2;
+  position:absolute;
+  border-radius: 12px;
+  transition:0.35s;
 }
 nav ul li a:hover::after{
   width:100%;
@@ -114,7 +134,7 @@ nav ul li a:hover::after{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin:0;
+  margin:-9;
   height: 480px;
   width: 100%;
 }
@@ -136,7 +156,10 @@ nav ul li a:hover::after{
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 2;
+  z-index: 1;
 }
-
+#top-box > *{
+  position:relative;
+  z-index:2;
+}
 
