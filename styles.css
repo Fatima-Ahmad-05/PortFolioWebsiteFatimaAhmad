@@ -6,27 +6,129 @@ box-sizing: border-box;
 
 }
 
+
+
 .profile-pic{
     width: 350px;
     height: 350px;
     border-radius: 50%;
     object-fit: cover;
+    padding-top: 26px;
 }
 
-#headerContent{
-margin:10px;
+.header{
+  margin:5px;
 }
 
-#header {
-    margin:0;
-  height: 580px;
-  width: 100%;
-  background-image: url(images/tech-bg.jpg);
-  background-size:cover ;
+
+
+.header h2,
+.header p {
+  position: relative;
+  z-index: 2;
+  text-align: left;
+}
+
+
+.header h2 {
+  font-size: 2em;
+  margin-bottom: 2px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  padding-left:35px;
+  padding-top:27px;
   
 }
 
-#header::before {
+.header p {
+  font-size: 1em;
+  color: #4e9fd2;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    padding-left:39px;
+    margin-bottom: 10px;
+
+}
+
+body {
+  background: #122042;
+  color: #4e9fd2;
+}
+
+
+nav ul li{
+ 
+  display:inline-block;
+  position:relative;
+  margin:0px 20px 3px 20px;
+  font-size: 18px;
+  font-weight: 900;
+  list-style:none;
+  z-index:20;
+
+}
+nav ul{
+  display:flex;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items:left;
+}
+
+.right-box{
+  position: fixed;
+  top: 16px;
+  left: 70px;
+  display: flex;
+  align-items: right;
+  padding: 12px 400px;
+  background: rgba(7, 9, 34, 0.75);
+  border-radius: 12px;
+
+}
+nav ul li a h4,
+nav ul li a{
+  color: white;
+}
+
+nav ul li a{
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  font-size: 20px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+nav ul li a::after{
+  content: "";
+  width:0;
+  height:3px;
+  transition:0.5s;
+}
+nav ul li a:hover::after{
+  width:100%;
+}
+
+
+
+#left-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin:0;
+  height: 480px;
+  width: 100%;
+}
+#top-box{
+  display:flex;
+  flex-direction: row;
+  background-image: url(images/tech-bg.jpg);
+  background-size: cover;
+  position: relative;
+  padding: 16px;
+  z-index: 1;
+}
+
+#top-box::before {
   content: '';
   position: absolute;
   top: 0;
@@ -34,31 +136,7 @@ margin:10px;
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}
-
-#header h1,
-#header p {
-  position: relative;
   z-index: 2;
-  text-align: center;
 }
 
 
-#header h1 {
-  font-size: 3em;
-  margin-bottom: 10px;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-}
-
-#header p {
-  font-size: 1.3em;
-  color: #4e9fd2;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
-}
-
-body {
-  background: #122042;
-  color: #4e9fd2;
-}
