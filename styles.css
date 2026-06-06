@@ -31,7 +31,7 @@ box-sizing: border-box;
 
 
 .header h2 {
-  font-size: 2em;
+  font-size: 2.5em;
   margin-bottom: 2px;
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
@@ -41,7 +41,7 @@ box-sizing: border-box;
 }
 
 .header p {
-  font-size: 1em;
+  font-size: 1.3em;
   color: #4e9fd2;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
     padding-left:39px;
@@ -69,15 +69,15 @@ nav ul li{
 }
 nav ul{
   display:flex;
-  gap: 29px;
+  gap: 20px;  /*space between nav bar items */
   list-style: none;
- 
-  align-items:left;
-   background: #060b16;
+ width:max-content;
+  align-items:center;
+   background: #313c53;
     border-radius: 32px;
-    border-width: 716px;
+    border-width: 929px;
     height:46px;
-   padding:-4px;
+   padding:8px 20px;
 }
 
 .right-box{
@@ -85,9 +85,9 @@ nav ul{
   top: 16px;
   left: 2px;
   display: flex;
- 
+
   align-items: right;
-  padding: 4px 200px;
+  padding: 4px 100px;
 
 
 }
@@ -103,7 +103,7 @@ nav ul li a{
 }
 
 nav ul li a{
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  text-shadow: 2px 2px 4px rgba(58, 58, 75, 0.8);
   font-size: 21px;
   font-weight: 900;
   text-decoration: none;
@@ -155,7 +155,7 @@ nav ul li a:hover::after{
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(13, 13, 21, 0.5);
   z-index: 1;
 }
 #top-box > *{
