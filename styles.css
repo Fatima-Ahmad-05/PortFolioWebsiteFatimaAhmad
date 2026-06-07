@@ -16,6 +16,19 @@ box-sizing: border-box;
     padding-top: 26px;
 }
 
+
+.logo{
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  
+}
+.dataAnnotate{
+  display:flex;
+  flex-direction:row;
+  gap:50px;
+  
+}
 .header{
   margin:5px;
 }
@@ -77,7 +90,8 @@ nav ul{
     border-radius: 32px;
     border-width: 929px;
     height:46px;
-   padding:8px 20px;
+   padding:12px 20px 12px;
+ 
 }
 
 .right-box{
@@ -163,45 +177,58 @@ nav ul li a:hover::after{
   z-index:2;
 }
 
-#skills h2{
 
-padding-left:10px;
-  padding-top:27px;
-}
 
 #skills{
   font-size: 1.4em;
-  display:flex;
-  gap:40px;
-    flex-direction: row;
-  padding-bottom: 50px ;
-  color: white;
-  padding-left:30px;
+
+color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
+
+#skills h2{  color: white;
+  padding-left:60px;
+  padding-top:27px;}
 #skills h3{
     font-size: 0.9em;
   color: #4e9fd2;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
-  
+ 
     margin-bottom: 20px;
-    margin-top:80px;
-     margin-bottom: 20px;
+    margin-top:40px;
+    margin-left:29px;
+    margin-right:29px;
+    
+}
+.skill-cards{
+  display:flex;
+  flex-wrap: wrap;
+   border-color: #4e9fd2;
+  
+  padding-bottom: 30px;
 }
 
-.skill-cards ul{
+.skill-card{
+  flex: 1 1 260px;
+ 
+  margin-left:20px;
+}
+
+.skill-card ul{
+  display:flex;
+  flex-direction: column;
   background: #313c53;
-    border-radius: 32px;
-    border-width: 929px;
-      font-size: 0.7em;
-      padding-top:10px;/* space from top and bottom of the grey list*/
-      padding-bottom:30px;
+  border-radius: 32px;
+  font-size: 0.7em;
+  padding: 40px 10 30px;
+  margin: 20px;
 }
 
-.skill-cards ul li{
- padding-top:10x;/* space from top and bottom of  list items*/
+.skill-card ul li{
+ padding-top:15px;/* space from top and bottom of  list items*/
    
-      align-items:center;
+      flex-direction: row;
+        display:flex;
       text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
-       padding: 4px 10px;
+       padding: 4px 45px; /*space frmo top and left of each skill item*/
 }
