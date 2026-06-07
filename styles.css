@@ -179,17 +179,17 @@ nav ul li a:hover::after{
 
 
 
-#skills{
+.section{
   font-size: 1.4em;
 
 color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
-#skills h2{  color: white;
+.section h2{  color: white;
   padding-left:60px;
   padding-top:27px;}
-#skills h3{
+.skill-card h3{
     font-size: 0.9em;
   color: #4e9fd2;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
@@ -208,12 +208,34 @@ color: white;
   padding-bottom: 30px;
 }
 
+.Experience-cards{
+   font-size: 0.9em;
+  color: #4e9fd2;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+ 
+    margin-bottom: 20px;
+    margin-top:40px;
+    margin-left:29px;
+    margin-right:29px;
+
+}
 .skill-card{
   flex: 1 1 260px;
  
   margin-left:20px;
 }
 
+.Experience-cards h3{
+    font-size: 0.9em;
+  color: #4e9fd2;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+ 
+    margin-bottom: 20px;
+    margin-top:40px;
+    margin-left:29px;
+    margin-right:29px;
+    
+}
 .skill-card ul{
   display:flex;
   flex-direction: column;
@@ -224,6 +246,29 @@ color: white;
   margin: 20px;
 }
 
+.experience-card{
+   display:center;
+ 
+  background: #313c53;
+  border-radius: 32px;
+  font-size: 0.7em;
+  padding: 40px 10 30px;
+  margin: 20px;
+}
+.experience-card h4{
+  color:white;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+.experience-card ul{
+  color:white;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+.experience-card ul li{
+    padding-top:10px;
+    font-size:1em;
+  padding-bottom:10px;
+}
 .skill-card ul li{
  padding-top:15px;/* space from top and bottom of  list items*/
    
